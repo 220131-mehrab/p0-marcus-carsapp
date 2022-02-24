@@ -5,7 +5,7 @@ public class Car {
     private int mpg;
     private int hp;
 
-    public Car() {
+    public Car(int mpg, String carModel) {
 
     }
 
@@ -22,6 +22,7 @@ public class Car {
         return carModel;
     }
     public void setCarModel(String carModel) {
+        this.carModel = carModel;
 
     }
 
