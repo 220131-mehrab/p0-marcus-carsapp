@@ -40,4 +40,12 @@ public class CarRepository {
 
     public void setConnection(Connection connection) {
     }
+
+    public List<Car> getCars() {
+        return null;
+    }
+
+    public Car getCar(String toLowerCase) {
+        return null;
+    }
 }
