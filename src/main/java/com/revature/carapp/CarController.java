@@ -11,16 +11,16 @@ public class CarController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String name = req.getParameter("carModel");
-        String result = AppContext.getCarService().searchByCarModel(name);
-        resp.getWriter().println(result);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-       int mpg = Integer.parseInt(req.getParameter("mpg"));
-       String carModel = req.getParameter("carModel");
-       AppContext.getCarService().saveCar(new Car(mpg, carModel));
+        int mpg = Integer.parseInt(req.getParameter("mpg"));
+        String carModel = req.getParameter("carModel");
     }
-
-
 }
+
+
+
+
+
