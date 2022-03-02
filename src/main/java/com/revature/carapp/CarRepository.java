@@ -10,9 +10,6 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class CarRepository {
-    public CarRepository() {
-
-    }
 
     public void printCarList() {
         URI uri = null;
@@ -30,7 +27,7 @@ public class CarRepository {
             e.printStackTrace();
         }
         //lines.forEach(System.out::println);
-        String searchQuery = "Camaro Z28";
+        String searchQuery = "Merc";
         for (String car : lines) {
             if (car.contains(searchQuery))
                 System.out.println(car);
