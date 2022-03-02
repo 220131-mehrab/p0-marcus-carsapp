@@ -12,7 +12,7 @@ import java.util.List;
 
 public class CarRepository {
     public CarRepository() {
-        
+
     }
 
     public void printCarList() {
@@ -32,20 +32,9 @@ public class CarRepository {
         }
         //lines.forEach(System.out::println);
         String searchQuery = "Camaro Z28";
-        for (String car: lines) {
+        for (String car : lines) {
             if (car.contains(searchQuery))
                 System.out.println(car);
         }
-    }
-
-    public void setConnection(Connection connection) {
-    }
-
-    public List<Car> getCars() {
-        return null;
-    }
-
-    public Car getCar(String toLowerCase) {
-        return null;
     }
 }
